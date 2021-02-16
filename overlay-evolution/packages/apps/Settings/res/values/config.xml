@@ -29,7 +29,4 @@
 
     <!-- Smart charging -->
     <bool name="config_smartChargingAvailable">true</bool>
-
-    <!-- Smooth display -->
-    <bool name="config_show_smooth_display">true</bool>
 </resources>
