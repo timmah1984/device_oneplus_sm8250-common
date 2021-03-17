@@ -12,7 +12,6 @@ allow system_server vendor_oem_hdmi_prop:file { getattr map open read };
 allow system_server proc_touchpanel:dir search;
 
 allow system_server sysfs_dm:file rw_file_perms;
-add_service(system_server, dc_dimming_service);
 allow system_server sdcardfs:file read;
 allow system_server vendor_display_notch_prop:file read;
 allow system_server vendor_display_notch_prop:file getattr;
