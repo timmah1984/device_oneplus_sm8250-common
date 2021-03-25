@@ -1,30 +1,16 @@
 allow vendor_qti_init_shell proc_modules:file r_file_perms;
-
 allow vendor_qti_init_shell sysfs:file write;
-
 allow vendor_qti_init_shell sysfs_fsc:dir r_dir_perms;
 allow vendor_qti_init_shell sysfs_fsc:file rw_file_perms;
-
 allow vendor_qti_init_shell sysfs_memplus:file rw_file_perms;
-
 allow vendor_qti_init_shell vendor_data_file:dir create_dir_perms;
 allow vendor_qti_init_shell vendor_data_file:file create_file_perms;
-
 allow vendor_qti_init_shell vendor_debugfs_wlan:dir r_dir_perms;
-
 allow vendor_qti_init_shell vendor_file:file execute_no_trans;
 allow vendor_qti_init_shell vendor_file:system module_load;
-
 allow vendor_qti_init_shell vendor_sysfs_scsi_host:dir r_dir_perms;
 allow vendor_qti_init_shell vendor_sysfs_scsi_host:file rw_file_perms;
-
 allow vendor_qti_init_shell vendor_wcnss_service_exec:file execute_no_trans;
-
-get_prop(vendor_qti_init_shell, exported_system_prop)
-set_prop(vendor_qti_init_shell, ctl_default_prop)
-set_prop(vendor_qti_init_shell, vendor_memplus_prop)
-set_prop(vendor_qti_init_shell, vendor_set_wlan_prop)
-
 allow vendor_qti_init_shell ctl_start_prop:property_service set;
 allow vendor_qti_init_shell ctl_stop_prop:property_service set;
 allow vendor_qti_init_shell kmsg_device:chr_file write;
@@ -34,4 +20,13 @@ allow vendor_qti_init_shell self:capability dac_read_search;
 allow vendor_qti_init_shell configfs:file create;
 allow vendor_qti_init_shell configfs:file create;
 allow vendor_qti_init_shell self:capability kill;
+allow vendor_qti_init_shell sysfs_io_sched_tuneable:file write;
+
+get_prop(vendor_qti_init_shell, exported_system_prop)
+
+set_prop(vendor_qti_init_shell, ctl_default_prop)
+set_prop(vendor_qti_init_shell, vendor_memplus_prop)
+set_prop(vendor_qti_init_shell, vendor_set_wlan_prop)
+
+
 

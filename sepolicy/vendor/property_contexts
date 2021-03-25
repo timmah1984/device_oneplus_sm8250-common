@@ -35,6 +35,7 @@ persist.vendor.tcpdump.copy               u:object_r:vendor_oem_wifi_prop:s0
 persist.vendor.tcpdump.dir                u:object_r:vendor_oem_wifi_prop:s0
 persist.vendor.tcpdump.location           u:object_r:vendor_oem_wifi_prop:s0
 persist.vendor.tcpdump.mdpermission       u:object_r:vendor_oem_wifi_prop:s0
+persist.vendor.dolby.loglevel             u:object_r:vendor_dolby_loglevel_prop:s0
 ro.gfx.driver.1                           u:object_r:exported3_default_prop:s0
 ro.vendor.build.display.full_id           u:object_r:vendor_rild_prop:s0
 ro.vendor.product.device.db               u:object_r:vendor_db_security_prop:s0
@@ -61,6 +62,3 @@ vendor.wlan.sniffer.output_dir            u:object_r:vendor_oem_wifi_prop:s0
 vendor.wlan.sniffer.status                u:object_r:vendor_oem_wifi_prop:s0
 vendor.wlan.sniffer.vendor_dir            u:object_r:vendor_oem_wifi_prop:s0
 vendor.wlan.write.con_mode                u:object_r:vendor_set_wlan_prop:s0
-
-# Dolby
-persist.vendor.dolby.loglevel                 u:object_r:vendor_dolby_loglevel_prop:s0
