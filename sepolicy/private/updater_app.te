@@ -1,1 +1,2 @@
 allow updater_app theme_prop:file read;
+allow updater_app theme_prop:file open;
