@@ -28,7 +28,7 @@
     <bool name="config_show_min_refresh_rate_switch">true</bool>
 
     <!-- Smart charging -->
-    <bool name="config_smartChargingAvailable">true</bool>
+    <bool name="config_supportSmartCharging">true</bool>
 
     <!-- Whether to show the Preference for Touch Sensitivity -->
     <bool name="config_show_touch_sensitivity">true</bool>
